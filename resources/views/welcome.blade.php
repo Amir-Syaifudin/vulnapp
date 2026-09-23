@@ -24,7 +24,6 @@
         <nav>
             <a href="/">Beranda</a>
             <a href="/upload">Unggah Rujukan Pasien</a>
-            <a href="/contact">Kontak</a>
         </nav>
     </header>
 
