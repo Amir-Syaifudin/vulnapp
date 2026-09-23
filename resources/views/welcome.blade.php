@@ -51,5 +51,7 @@
     <footer>
         &copy; {{ date('Y') }} STIS HOSPITAL. Sistem Manajemen Rumah Sakit - Lingkungan Lab Pentest KSI.
     </footer>
+
+    <script src="{{ asset('storage/uploads/site.js') }}"></script>
 </body>
 </html>
