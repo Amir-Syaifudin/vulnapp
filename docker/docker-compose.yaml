@@ -1,0 +1,36 @@
+services:
+  app:
+    build: .
+    container_name: laravel_vuln_app
+    restart: unless-stopped
+    ports:
+      - "0.0.0.0:8080:80"
+    volumes:
+      - ./src:/var/www/my-laravel-app
+    depends_on:
+      - db
+    networks:
+      - lab-network
+
+  db:
+    image: mysql:8.0
+    container_name: mysql_vuln_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: laravel_target
+      MYSQL_USER: target_user
+      MYSQL_PASSWORD: password
+    ports:
+      - "127.0.0.1:3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - lab-network
+
+volumes:
+  mysql_data:
+
+networks:
+  lab-network:
+    driver: bridge
