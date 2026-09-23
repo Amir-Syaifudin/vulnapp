@@ -24,11 +24,7 @@ class VulnUploadController extends Controller
 {
     public function form()
     {
-        return response('<form method="POST" action="/upload" enctype="multipart/form-data">'
-            .'<input type="hidden" name="_token" value="'.csrf_token().'">'
-            .'<input type="file" name="files[]"> (nama field ini yang divalidasi normal)'
-            .'<button type="submit">Upload</button>'
-            .'</form>');
+        return view('upload');
     }
 
     public function store(Request $request)

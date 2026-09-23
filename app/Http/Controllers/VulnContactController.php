@@ -23,13 +23,7 @@ class VulnContactController extends Controller
 {
     public function form()
     {
-        return response('<form method="POST" action="/contact">'
-            .'<input type="hidden" name="_token" value="'.csrf_token().'">'
-            .'<input type="text" name="name" placeholder="name">'
-            .'<input type="text" name="email" placeholder="email">'
-            .'<textarea name="message"></textarea>'
-            .'<button type="submit">Send</button>'
-            .'</form>');
+        return view('contact');
     }
 
     public function send(Request $request)
