@@ -3,7 +3,10 @@
 @section('title', 'Beranda')
 
 @section('full')
-    <img class="banner" src="{{ asset('storage/uploads/banner.jpg') }}" alt="LSP-Sim Banner">
+    <div class="hero">
+        <h1>LSP-Sim</h1>
+        <p>Lingkungan Simulasi Lembaga Sertifikasi Profesi</p>
+    </div>
 
     <section class="services">
         <h2>Layanan</h2>

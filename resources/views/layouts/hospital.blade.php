@@ -20,7 +20,12 @@
         header.nav nav a { color: #fff; text-decoration: none; font-size: 14px; }
         header.nav nav a:hover { text-decoration: underline; }
 
-        .banner { width: 100%; max-height: 360px; object-fit: cover; display: block; background: #164e63; }
+        .hero {
+            width: 100%; background: #164e63; color: #fff; text-align: center;
+            padding: 64px 24px;
+        }
+        .hero h1 { margin: 0 0 8px; font-size: 28px; }
+        .hero p { margin: 0; font-size: 14px; color: #cbd5e1; }
 
         .services { max-width: 960px; margin: 40px auto; padding: 0 24px; }
         .services h2 { color: #164e63; }
