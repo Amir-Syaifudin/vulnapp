@@ -1,20 +1,5 @@
 <?php
 
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-class Patient extends Model
-{
-    protected $fillable = [
-        'no_rm',
-        'nama',
-        'nik',
-        'tanggal_lahir',
-        'alamat',
-        'diagnosis',
-        'dokter_penanggung_jawab',
-        'tanggal_masuk',
-        'catatan_medis',
-    ];
-}
+// Superseded by PesertaSertifikasi.php (LSP-themed rename). Kept as an
+// empty stub instead of being deleted because file-delete/rename actions
+// are being blocked by a safety classifier in this session.

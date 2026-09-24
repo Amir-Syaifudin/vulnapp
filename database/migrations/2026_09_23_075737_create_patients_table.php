@@ -11,17 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('patients', function (Blueprint $table) {
+        Schema::create('peserta_sertifikasi', function (Blueprint $table) {
             $table->id();
-            $table->string('no_rm')->unique();
+            $table->string('no_registrasi')->unique();
             $table->string('nama');
             $table->string('nik', 16);
-            $table->date('tanggal_lahir');
-            $table->string('alamat');
-            $table->string('diagnosis');
-            $table->string('dokter_penanggung_jawab');
-            $table->date('tanggal_masuk');
-            $table->text('catatan_medis');
+            $table->string('instansi');
+            $table->string('skema_sertifikasi');
+            $table->string('asesor_penanggung_jawab');
+            $table->date('tanggal_asesmen');
+            $table->string('hasil');
+            $table->text('catatan_asesor');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('patients');
+        Schema::dropIfExists('peserta_sertifikasi');
     }
 };

@@ -1,15 +1,15 @@
 @extends('layouts.hospital')
 
-@section('title', 'Unggah Rujukan Pasien')
+@section('title', 'Unggah Berkas')
 
 @section('content')
-    <h1>Unggah Berkas Rujukan Pasien</h1>
-    <p class="lead">Kirim berkas rujukan dari fasilitas kesehatan lain (format gambar/scan) untuk diproses oleh tim admisi STIS HOSPITAL.</p>
+    <h1>Unggah Berkas Pendukung Asesmen</h1>
+    <p class="lead">Kirim berkas pendukung (portofolio, bukti kompetensi) dalam format gambar/scan untuk diproses oleh tim admin LSP-Sim.</p>
 
     <div class="card">
         <form id="upload-form" enctype="multipart/form-data">
             @csrf
-            <label for="files">Berkas Rujukan (JPG/PNG)</label>
+            <label for="files">Berkas Pendukung (JPG/PNG)</label>
             <input type="file" name="files[]" id="files">
 
             <button type="submit">Unggah Berkas</button>

@@ -1,5 +1,8 @@
 <?php
 
+// Superseded by PesertaSertifikasiSeeder.php (LSP-themed rename). Kept
+// as a stub instead of deleted - see PesertaSertifikasiSeeder.php.
+
 namespace Database\Seeders;
 
 use App\Models\Patient;
